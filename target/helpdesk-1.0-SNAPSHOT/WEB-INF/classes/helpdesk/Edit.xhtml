@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.EditHelpdeskTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.EditHelpdeskLabel_id}" for="id" />
+                    <h:inputText id="id" value="#{helpdeskController.selected.id}" title="#{bundle.EditHelpdeskTitle_id}" required="true" requiredMessage="#{bundle.EditHelpdeskRequiredMessage_id}"/>
+                    <h:outputLabel value="#{bundle.EditHelpdeskLabel_FName}" for="FName" />
+                    <h:inputText id="FName" value="#{helpdeskController.selected.FName}" title="#{bundle.EditHelpdeskTitle_FName}" />
+                    <h:outputLabel value="#{bundle.EditHelpdeskLabel_LName}" for="LName" />
+                    <h:inputText id="LName" value="#{helpdeskController.selected.LName}" title="#{bundle.EditHelpdeskTitle_LName}" />
+                    <h:outputLabel value="#{bundle.EditHelpdeskLabel_email}" for="email" />
+                    <h:inputText id="email" value="#{helpdeskController.selected.email}" title="#{bundle.EditHelpdeskTitle_email}" />
+                    <h:outputLabel value="#{bundle.EditHelpdeskLabel_comments}" for="comments" />
+                    <h:inputText id="comments" value="#{helpdeskController.selected.comments}" title="#{bundle.EditHelpdeskTitle_comments}" />
+                    <h:outputLabel value="#{bundle.EditHelpdeskLabel_statusID}" for="statusID" />
+                    <h:selectOneMenu id="statusID" value="#{helpdeskController.selected.statusID}" title="#{bundle.EditHelpdeskTitle_statusID}" required="true" requiredMessage="#{bundle.EditHelpdeskRequiredMessage_statusID}">
+                        <f:selectItems value="#{statusController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.EditHelpdeskLabel_departmentID}" for="departmentID" />
+                    <h:selectOneMenu id="departmentID" value="#{helpdeskController.selected.departmentID}" title="#{bundle.EditHelpdeskTitle_departmentID}" required="true" requiredMessage="#{bundle.EditHelpdeskRequiredMessage_departmentID}">
+                        <f:selectItems value="#{departmentController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.EditHelpdeskLabel_employeeID}" for="employeeID" />
+                    <h:selectOneMenu id="employeeID" value="#{helpdeskController.selected.employeeID}" title="#{bundle.EditHelpdeskTitle_employeeID}" >
+                        <f:selectItems value="#{employeeController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.EditHelpdeskLabel_severityID}" for="severityID" />
+                    <h:selectOneMenu id="severityID" value="#{helpdeskController.selected.severityID}" title="#{bundle.EditHelpdeskTitle_severityID}" >
+                        <f:selectItems value="#{severityController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                </h:panelGrid>
+                <h:commandLink action="#{helpdeskController.update}" value="#{bundle.EditHelpdeskSaveLink}"/>
+                <br />
+                <br />
+                <h:link outcome="View" value="#{bundle.EditHelpdeskViewLink}"/>
+                <br />
+                <h:commandLink action="#{helpdeskController.prepareList}" value="#{bundle.EditHelpdeskShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.EditHelpdeskIndexLink}" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

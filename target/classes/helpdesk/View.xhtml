@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ViewHelpdeskTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputText value="#{bundle.ViewHelpdeskLabel_id}"/>
+                    <h:outputText value="#{helpdeskController.selected.id}" title="#{bundle.ViewHelpdeskTitle_id}"/>
+                    <h:outputText value="#{bundle.ViewHelpdeskLabel_FName}"/>
+                    <h:outputText value="#{helpdeskController.selected.FName}" title="#{bundle.ViewHelpdeskTitle_FName}"/>
+                    <h:outputText value="#{bundle.ViewHelpdeskLabel_LName}"/>
+                    <h:outputText value="#{helpdeskController.selected.LName}" title="#{bundle.ViewHelpdeskTitle_LName}"/>
+                    <h:outputText value="#{bundle.ViewHelpdeskLabel_email}"/>
+                    <h:outputText value="#{helpdeskController.selected.email}" title="#{bundle.ViewHelpdeskTitle_email}"/>
+                    <h:outputText value="#{bundle.ViewHelpdeskLabel_comments}"/>
+                    <h:outputText value="#{helpdeskController.selected.comments}" title="#{bundle.ViewHelpdeskTitle_comments}"/>
+                    <h:outputText value="#{bundle.ViewHelpdeskLabel_statusID}"/>
+                    <h:outputText value="#{helpdeskController.selected.statusID}" title="#{bundle.ViewHelpdeskTitle_statusID}"/>
+                    <h:outputText value="#{bundle.ViewHelpdeskLabel_departmentID}"/>
+                    <h:outputText value="#{helpdeskController.selected.departmentID}" title="#{bundle.ViewHelpdeskTitle_departmentID}"/>
+                    <h:outputText value="#{bundle.ViewHelpdeskLabel_employeeID}"/>
+                    <h:outputText value="#{helpdeskController.selected.employeeID}" title="#{bundle.ViewHelpdeskTitle_employeeID}"/>
+                    <h:outputText value="#{bundle.ViewHelpdeskLabel_severityID}"/>
+                    <h:outputText value="#{helpdeskController.selected.severityID}" title="#{bundle.ViewHelpdeskTitle_severityID}"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{helpdeskController.destroyAndView}" value="#{bundle.ViewHelpdeskDestroyLink}"/>
+                <br />
+                <br />
+                <h:link outcome="Edit" value="#{bundle.ViewHelpdeskEditLink}"/>
+                <br />
+                <h:commandLink action="#{helpdeskController.prepareCreate}" value="#{bundle.ViewHelpdeskCreateLink}" />
+                <br />
+                <h:commandLink action="#{helpdeskController.prepareList}" value="#{bundle.ViewHelpdeskShowAllLink}"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.ViewHelpdeskIndexLink}"/>
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>
