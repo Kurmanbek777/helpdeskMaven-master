@@ -37,10 +37,13 @@
                                 <h:outputText value="&nbsp;"/>
                             </f:facet>
                             <h:commandLink action="#{severityController.prepareView}" value="#{bundle.ListSeverityViewLink}"/>
+                            <h:commandButton action="#{severityController.prepareView}" value="#{bundle.ListSeverityViewLink}"/>
                             <h:outputText value=" "/>
                             <h:commandLink action="#{severityController.prepareEdit}" value="#{bundle.ListSeverityEditLink}"/>
+                            <h:commandButton action="#{severityController.prepareEdit}" value="#{bundle.ListSeverityEditLink}"/>
                             <h:outputText value=" "/>
                             <h:commandLink action="#{severityController.destroy}" value="#{bundle.ListSeverityDestroyLink}"/>
+                            <h:commandButton action="#{severityController.destroy}" value="#{bundle.ListSeverityDestroyLink}"/>
                         </h:column>
                     </h:dataTable>
                 </h:panelGroup>

@@ -21,14 +21,25 @@
                     <h:outputText value="#{departmentController.selected.department}" title="#{bundle.ViewDepartmentTitle_department}"/>
                 </h:panelGrid>
                 <br />
+                <br />
                 <h:commandLink action="#{departmentController.destroyAndView}" value="#{bundle.ViewDepartmentDestroyLink}"/>
                 <br />
                 <br />
-                <h:link outcome="Edit" value="#{bundle.ViewDepartmentEditLink}"/>
+                <h:commandButton action="#{departmentController.destroyAndView}" value="#{bundle.ViewDepartmentDestroyLink}"/>
+                <br />
+                <br />
+                <h:button outcome="Edit" value="#{bundle.ViewDepartmentEditLink}"/>
+                <br />
                 <br />
                 <h:commandLink action="#{departmentController.prepareCreate}" value="#{bundle.ViewDepartmentCreateLink}" />
                 <br />
+                <br />
+                <h:commandButton id="submit" action="#{departmentController.prepareCreate}" value="#{bundle.ViewDepartmentCreateLink}" />
+                <br />
                 <h:commandLink action="#{departmentController.prepareList}" value="#{bundle.ViewDepartmentShowAllLink}"/>
+                <br />
+                <br />
+                <h:commandButton action="#{departmentController.prepareList}" value="#{bundle.ViewDepartmentShowAllLink}"/>
                 <br />
                 <br />
              <!--   <h:link outcome="/index" value="#{bundle.ViewDepartmentIndexLink}"/> -->

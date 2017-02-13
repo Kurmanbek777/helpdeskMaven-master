@@ -21,6 +21,7 @@
                     <h:outputText value="#{statusController.selected.status}" title="#{bundle.ViewStatusTitle_status}"/>
                 </h:panelGrid>
                 <br />
+                <br />
                 <h:commandLink action="#{statusController.destroyAndView}" value="#{bundle.ViewStatusDestroyLink}"/>
                 <br />
                 <br />
@@ -28,6 +29,7 @@
                 <br />
                 <br />
                 <h:button outcome="Edit" value="#{bundle.ViewStatusEditLink}"/>
+                <br />
                 <br />
                 <h:commandLink action="#{statusController.prepareCreate}" value="#{bundle.ViewStatusCreateLink}" />
                 <br />

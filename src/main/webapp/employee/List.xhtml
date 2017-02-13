@@ -43,10 +43,14 @@
                                 <h:outputText value="&nbsp;"/>
                             </f:facet>
                             <h:commandLink action="#{employeeController.prepareView}" value="#{bundle.ListEmployeeViewLink}"/>
+                            <h:commandButton action="#{employeeController.prepareView}" value="#{bundle.ListEmployeeViewLink}"/>
                             <h:outputText value=" "/>
                             <h:commandLink action="#{employeeController.prepareEdit}" value="#{bundle.ListEmployeeEditLink}"/>
+                            <h:commandButton action="#{employeeController.prepareEdit}" value="#{bundle.ListEmployeeEditLink}"/>
                             <h:outputText value=" "/>
                             <h:commandLink action="#{employeeController.destroy}" value="#{bundle.ListEmployeeDestroyLink}"/>
+                            <h:commandButton action="#{employeeController.destroy}" value="#{bundle.ListEmployeeDestroyLink}"/>
+                            
                         </h:column>
                     </h:dataTable>
                 </h:panelGroup>

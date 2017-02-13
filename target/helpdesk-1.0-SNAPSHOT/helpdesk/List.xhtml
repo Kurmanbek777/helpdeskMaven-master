@@ -79,10 +79,13 @@
                                 <h:outputText value="&nbsp;"/>
                             </f:facet>
                             <h:commandLink action="#{helpdeskController.prepareView}" value="#{bundle.ListHelpdeskViewLink}"/>
+                            <h:commandButton action="#{helpdeskController.prepareView}" value="#{bundle.ListHelpdeskViewLink}"/>
                             <h:outputText value=" "/>
                             <h:commandLink action="#{helpdeskController.prepareEdit}" value="#{bundle.ListHelpdeskEditLink}"/>
+                            <h:commandButton action="#{helpdeskController.prepareEdit}" value="#{bundle.ListHelpdeskEditLink}"/>
                             <h:outputText value=" "/>
                             <h:commandLink action="#{helpdeskController.destroy}" value="#{bundle.ListHelpdeskDestroyLink}"/>
+                            <h:commandButton action="#{helpdeskController.destroy}" value="#{bundle.ListHelpdeskDestroyLink}"/>
                         </h:column>
                     </h:dataTable>
                 </h:panelGroup>
@@ -99,7 +102,7 @@
                <!--  <h:link outcome="/index" value="#{bundle.ListHelpdeskIndexLink}"/> -->
                 <br />
                 <br />
-                <input type="button" value="Домой" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
             </h:form>
         </ui:define>
     </ui:composition>

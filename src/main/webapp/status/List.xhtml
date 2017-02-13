@@ -37,10 +37,13 @@
                                 <h:outputText value="&nbsp;"/>
                             </f:facet>
                             <h:commandLink action="#{statusController.prepareView}" value="#{bundle.ListStatusViewLink}"/>
+                            <h:commandButton action="#{statusController.prepareView}" value="#{bundle.ListStatusViewLink}"/>
                             <h:outputText value=" "/>
                             <h:commandLink action="#{statusController.prepareEdit}" value="#{bundle.ListStatusEditLink}"/>
+                            <h:commandButton action="#{statusController.prepareEdit}" value="#{bundle.ListStatusEditLink}"/>
                             <h:outputText value=" "/>
                             <h:commandLink action="#{statusController.destroy}" value="#{bundle.ListStatusDestroyLink}"/>
+                            <h:commandButton action="#{statusController.destroy}" value="#{bundle.ListStatusDestroyLink}"/>
                         </h:column>
                     </h:dataTable>
                 </h:panelGroup>

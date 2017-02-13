@@ -35,15 +35,18 @@
                     <h:outputText value="#{helpdeskController.selected.severityID}" title="#{bundle.ViewHelpdeskTitle_severityID}"/>
                 </h:panelGrid>
                 <br />
+                <br />
                 <h:commandLink action="#{helpdeskController.destroyAndView}" value="#{bundle.ViewHelpdeskDestroyLink}"/>
                 <br />
                 <br />
                 <h:button outcome="Edit" value="#{bundle.ViewHelpdeskEditLink}"/>
                 <br />
+                <br />
                 <h:commandLink action="#{helpdeskController.prepareCreate}" value="#{bundle.ViewHelpdeskCreateLink}" />
                 <br />
                 <br />
                 <h:commandButton id="submit" action="#{helpdeskController.prepareCreate}" value="#{bundle.ViewHelpdeskCreateLink}" />
+                <br />
                 <br />
                 <h:commandLink action="#{helpdeskController.prepareList}" value="#{bundle.ViewHelpdeskShowAllLink}"/>
                 <br />
