@@ -24,10 +24,19 @@
                 <h:commandLink action="#{severityController.create}" value="#{bundle.CreateSeveritySaveLink}" />
                 <br />
                 <br />
+                <h:commandButton id="submit" action="#{severityController.create}" value="#{bundle.CreateSeveritySaveLink}" />
+                <br />
+                <br />
                 <h:commandLink action="#{severityController.prepareList}" value="#{bundle.CreateSeverityShowAllLink}" immediate="true"/>
                 <br />
                 <br />
-                <h:link outcome="/index" value="#{bundle.CreateSeverityIndexLink}"/>
+                <h:commandButton action="#{severityController.prepareList}" value="#{bundle.CreateSeverityShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+              <!--  <h:link outcome="/index" value="#{bundle.CreateSeverityIndexLink}"/> -->
+                <br />
+                <br />
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
             </h:form>
         </ui:define>
     </ui:composition>

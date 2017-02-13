@@ -36,25 +36,29 @@
                             <f:facet name="header">
                                 <h:outputText value="&nbsp;"/>
                             </f:facet>
-                            <h:commandLink action="#{departmentController.prepareView}" value="#{bundle.ListDepartmentViewLink}"/>
+                            <h:commandLink action="#{departmentController.prepareView}" value="#{bundle.ListDepartmentViewLink}"/> 
+                            <h:commandButton action="#{departmentController.prepareView}" value="#{bundle.ListDepartmentViewLink}"/>
                             <h:outputText value=" "/>
                             <h:commandLink action="#{departmentController.prepareEdit}" value="#{bundle.ListDepartmentEditLink}"/>
+                            <h:commandButton action="#{departmentController.prepareEdit}" value="#{bundle.ListDepartmentEditLink}"/>
                             <h:outputText value=" "/>
                             <h:commandLink action="#{departmentController.destroy}" value="#{bundle.ListDepartmentDestroyLink}"/>
+                            <h:commandButton action="#{departmentController.destroy}" value="#{bundle.ListDepartmentDestroyLink}"/>
                         </h:column>
                     </h:dataTable>
                 </h:panelGroup>
                 <br />
-                <h:commandLink action="#{departmentController.prepareCreate}" value="#{bundle.ListDepartmentCreateLink}"/>
+               <h:commandLink action="#{departmentController.prepareCreate}" value="#{bundle.ListDepartmentCreateLink}"/>  
                 <br />
                 <br />
-                <input type="button" value="Создать новый департамент" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/department/Create.xhtml'"/>
+                <h:commandButton action="#{departmentController.prepareCreate}" value="#{bundle.ListDepartmentCreateLink}"/>
+             <!--   <input type="button" value="Создать новый департамент" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/department/Create.xhtml'"/>  -->
                 <br />
                 <br />
-                <h:link outcome="/index" value="#{bundle.ListDepartmentIndexLink}"/>
+               <!-- <h:link outcome="/index" value="#{bundle.ListDepartmentIndexLink}"/> -->
                 <br />
                 <br />
-                <input type="button" value="Домой" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
             </h:form>
         </ui:define>
     </ui:composition>

@@ -45,12 +45,18 @@
                 <h:commandLink action="#{helpdeskController.update}" value="#{bundle.EditHelpdeskSaveLink}"/>
                 <br />
                 <br />
-                <h:link outcome="View" value="#{bundle.EditHelpdeskViewLink}"/>
+                <h:button outcome="View" value="#{bundle.EditHelpdeskViewLink}"/>
                 <br />
                 <h:commandLink action="#{helpdeskController.prepareList}" value="#{bundle.EditHelpdeskShowAllLink}" immediate="true"/>
                 <br />
                 <br />
-                <h:link outcome="/index" value="#{bundle.EditHelpdeskIndexLink}" />
+                <h:commandButton action="#{helpdeskController.prepareList}" value="#{bundle.EditHelpdeskShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+               <!--  <h:link outcome="/index" value="#{bundle.EditHelpdeskIndexLink}" /> -->
+                <br />
+                <br />
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
             </h:form>
         </ui:define>
     </ui:composition>

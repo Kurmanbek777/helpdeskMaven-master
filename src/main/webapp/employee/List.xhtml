@@ -54,13 +54,16 @@
                 <h:commandLink action="#{employeeController.prepareCreate}" value="#{bundle.ListEmployeeCreateLink}"/>
                 <br />
                 <br />
-                <input type="button" value="Создать нового исполнителя" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/employee/Create.xhtml'"/>
+                 <h:commandButton id="submit" action="#{employeeController.prepareCreate}" value="#{bundle.ListEmployeeCreateLink}"/>
                 <br />
                 <br />
-                <h:link outcome="/index" value="#{bundle.ListEmployeeIndexLink}"/>
+            <!--    <input type="button" value="Создать нового исполнителя" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/employee/Create.xhtml'"/>  -->
                 <br />
                 <br />
-                <input type="button" value="Домой" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
+              <!--  <h:link outcome="/index" value="#{bundle.ListEmployeeIndexLink}"/> -->
+                <br />
+                <br />
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
             </h:form>
         </ui:define>
     </ui:composition>

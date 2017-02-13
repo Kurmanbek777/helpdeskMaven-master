@@ -24,10 +24,19 @@
                 <h:commandLink action="#{statusController.create}" value="#{bundle.CreateStatusSaveLink}" />
                 <br />
                 <br />
+                <h:commandButton id="submit" action="#{statusController.create}" value="#{bundle.CreateStatusSaveLink}" />
+                <br />
+                <br />
                 <h:commandLink action="#{statusController.prepareList}" value="#{bundle.CreateStatusShowAllLink}" immediate="true"/>
                 <br />
                 <br />
-                <h:link outcome="/index" value="#{bundle.CreateStatusIndexLink}"/>
+                <h:commandButton action="#{statusController.prepareList}" value="#{bundle.CreateStatusShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+               <!--  <h:link outcome="/index" value="#{bundle.CreateStatusIndexLink}"/> -->
+                <br />
+                <br />
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
             </h:form>
         </ui:define>
     </ui:composition>

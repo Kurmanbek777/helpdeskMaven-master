@@ -25,12 +25,25 @@
                 <h:commandLink action="#{employeeController.update}" value="#{bundle.EditEmployeeSaveLink}"/>
                 <br />
                 <br />
-                <h:link outcome="View" value="#{bundle.EditEmployeeViewLink}"/>
+                <h:commandButton id="submit" action="#{employeeController.update}" value="#{bundle.EditEmployeeSaveLink}"/>
+                <br />
+                <br />
+             <!--   <h:link outcome="View" value="#{bundle.EditEmployeeViewLink}"/> -->
+                <br />
+                <br />
+                <h:button outcome="View" value="#{bundle.EditEmployeeViewLink}"/>
+                <br />
                 <br />
                 <h:commandLink action="#{employeeController.prepareList}" value="#{bundle.EditEmployeeShowAllLink}" immediate="true"/>
                 <br />
                 <br />
-                <h:link outcome="/index" value="#{bundle.EditEmployeeIndexLink}" />
+                <h:commandButton action="#{employeeController.prepareList}" value="#{bundle.EditEmployeeShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+             <!--   <h:link outcome="/index" value="#{bundle.EditEmployeeIndexLink}" />  -->
+                <br />
+                <br />
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
             </h:form>
         </ui:define>
     </ui:composition>

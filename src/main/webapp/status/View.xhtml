@@ -24,15 +24,27 @@
                 <h:commandLink action="#{statusController.destroyAndView}" value="#{bundle.ViewStatusDestroyLink}"/>
                 <br />
                 <br />
-                <h:link outcome="Edit" value="#{bundle.ViewStatusEditLink}"/>
+                <h:commandButton action="#{statusController.destroyAndView}" value="#{bundle.ViewStatusDestroyLink}"/>
+                <br />
+                <br />
+                <h:button outcome="Edit" value="#{bundle.ViewStatusEditLink}"/>
                 <br />
                 <h:commandLink action="#{statusController.prepareCreate}" value="#{bundle.ViewStatusCreateLink}" />
+                <br />
+                <br />
+                <h:commandButton id="submit" action="#{statusController.prepareCreate}" value="#{bundle.ViewStatusCreateLink}" />
+                <br />
                 <br />
                 <h:commandLink action="#{statusController.prepareList}" value="#{bundle.ViewStatusShowAllLink}"/>
                 <br />
                 <br />
-                <h:link outcome="/index" value="#{bundle.ViewStatusIndexLink}"/>
-
+                <h:commandButton action="#{statusController.prepareList}" value="#{bundle.ViewStatusShowAllLink}"/>
+                <br />
+                <br />
+                <!-- <h:link outcome="/index" value="#{bundle.ViewStatusIndexLink}"/> -->
+                <br />
+                <br />
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
             </h:form>
         </ui:define>
     </ui:composition>

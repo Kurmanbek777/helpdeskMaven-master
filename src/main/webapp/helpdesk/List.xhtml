@@ -90,10 +90,13 @@
                 <h:commandLink action="#{helpdeskController.prepareCreate}" value="#{bundle.ListHelpdeskCreateLink}"/>
                 <br />
                 <br />
-                <input type="button" value="Создать новую заявку" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/helpdesk/Create.xhtml'"/>
+                <h:commandButton action="#{helpdeskController.prepareCreate}" value="#{bundle.ListHelpdeskCreateLink}"/>
                 <br />
                 <br />
-                <h:link outcome="/index" value="#{bundle.ListHelpdeskIndexLink}"/>
+              <!--  <input type="button" value="Создать новую заявку" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/helpdesk/Create.xhtml'"/> -->
+                <br />
+                <br />
+               <!--  <h:link outcome="/index" value="#{bundle.ListHelpdeskIndexLink}"/> -->
                 <br />
                 <br />
                 <input type="button" value="Домой" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>

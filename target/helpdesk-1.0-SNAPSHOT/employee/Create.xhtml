@@ -26,10 +26,19 @@
                 <h:commandLink action="#{employeeController.create}" value="#{bundle.CreateEmployeeSaveLink}" />
                 <br />
                 <br />
+                <h:commandButton id="submit" action="#{employeeController.create}" value="#{bundle.CreateEmployeeSaveLink}" />
+                <br />
+                <br />
                 <h:commandLink action="#{employeeController.prepareList}" value="#{bundle.CreateEmployeeShowAllLink}" immediate="true"/>
                 <br />
                 <br />
-                <h:link outcome="/index" value="#{bundle.CreateEmployeeIndexLink}"/>
+                <h:commandButton action="#{employeeController.prepareList}" value="#{bundle.CreateEmployeeShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+              <!--  <h:link outcome="/index" value="#{bundle.CreateEmployeeIndexLink}"/> -->
+                <br />
+                <br />
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
             </h:form>
         </ui:define>
     </ui:composition>

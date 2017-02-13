@@ -48,13 +48,16 @@
                 <h:commandLink action="#{severityController.prepareCreate}" value="#{bundle.ListSeverityCreateLink}"/>
                 <br />
                 <br />
-                <input type="button" value="Создать" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/severity/Create.xhtml'"/>
+                <h:commandButton id="submit" action="#{severityController.prepareCreate}" value="#{bundle.ListSeverityCreateLink}"/>
                 <br />
                 <br />
-                <h:link outcome="/index" value="#{bundle.ListSeverityIndexLink}"/>
+              <!--  <input type="button" value="Создать" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/severity/Create.xhtml'"/> -->
                 <br />
                 <br />
-                <input type="button" value="Домой" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
+              <!--  <h:link outcome="/index" value="#{bundle.ListSeverityIndexLink}"/> -->
+                <br />
+                <br />
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
             </h:form>
         </ui:define>
     </ui:composition>

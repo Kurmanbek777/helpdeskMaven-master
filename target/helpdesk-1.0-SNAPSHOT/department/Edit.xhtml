@@ -23,12 +23,18 @@
                 <h:commandLink action="#{departmentController.update}" value="#{bundle.EditDepartmentSaveLink}"/>
                 <br />
                 <br />
-                <h:link outcome="View" value="#{bundle.EditDepartmentViewLink}"/>
+                <h:commandButton id="submit" action="#{departmentController.update}" value="#{bundle.EditDepartmentSaveLink}"/>
+                <br />
+                <br />
+                <h:button outcome="View" value="#{bundle.EditDepartmentViewLink}"/>
                 <br />
                 <h:commandLink action="#{departmentController.prepareList}" value="#{bundle.EditDepartmentShowAllLink}" immediate="true"/>
                 <br />
                 <br />
-                <h:link outcome="/index" value="#{bundle.EditDepartmentIndexLink}" />
+              <!--  <h:link outcome="/index" value="#{bundle.EditDepartmentIndexLink}" /> -->
+                <br />
+                <br />
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
             </h:form>
         </ui:define>
     </ui:composition>

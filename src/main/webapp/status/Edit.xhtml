@@ -23,12 +23,18 @@
                 <h:commandLink action="#{statusController.update}" value="#{bundle.EditStatusSaveLink}"/>
                 <br />
                 <br />
-                <h:link outcome="View" value="#{bundle.EditStatusViewLink}"/>
+                <h:button outcome="View" value="#{bundle.EditStatusViewLink}"/>
                 <br />
                 <h:commandLink action="#{statusController.prepareList}" value="#{bundle.EditStatusShowAllLink}" immediate="true"/>
                 <br />
                 <br />
-                <h:link outcome="/index" value="#{bundle.EditStatusIndexLink}" />
+                <h:commandButton action="#{statusController.prepareList}" value="#{bundle.EditStatusShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+              <!--  <h:link outcome="/index" value="#{bundle.EditStatusIndexLink}" /> -->
+                <br />
+                <br />
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
             </h:form>
         </ui:define>
     </ui:composition>

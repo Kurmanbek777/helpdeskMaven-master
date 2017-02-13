@@ -26,15 +26,31 @@
                 <h:commandLink action="#{employeeController.destroyAndView}" value="#{bundle.ViewEmployeeDestroyLink}"/>
                 <br />
                 <br />
-                <h:link outcome="Edit" value="#{bundle.ViewEmployeeEditLink}"/>
+                <h:commandButton action="#{employeeController.destroyAndView}" value="#{bundle.ViewEmployeeDestroyLink}"/>
+                <br />
+                <br />
+              <!--  <h:link outcome="Edit" value="#{bundle.ViewEmployeeEditLink}"/> -->
+                <br />
+                <br />
+                <h:button outcome="Edit" value="#{bundle.ViewEmployeeEditLink}"/>
+                <br />
                 <br />
                 <h:commandLink action="#{employeeController.prepareCreate}" value="#{bundle.ViewEmployeeCreateLink}" />
+                <br />
+                <br />
+                <h:commandButton id="submit"  action="#{employeeController.prepareCreate}" value="#{bundle.ViewEmployeeCreateLink}" />
+                <br />
                 <br />
                 <h:commandLink action="#{employeeController.prepareList}" value="#{bundle.ViewEmployeeShowAllLink}"/>
                 <br />
                 <br />
-                <h:link outcome="/index" value="#{bundle.ViewEmployeeIndexLink}"/>
-
+                <h:commandButton action="#{employeeController.prepareList}" value="#{bundle.ViewEmployeeShowAllLink}"/>
+                <br />
+                <br />
+               <!--  <h:link outcome="/index" value="#{bundle.ViewEmployeeIndexLink}"/> -->
+                <br />
+                <br />
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
             </h:form>
         </ui:define>
     </ui:composition>

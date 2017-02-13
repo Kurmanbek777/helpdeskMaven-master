@@ -48,13 +48,16 @@
                 <h:commandLink action="#{statusController.prepareCreate}" value="#{bundle.ListStatusCreateLink}"/>
                 <br />
                 <br />
-                <input type="button" value="Создать новый статус" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/status/Create.xhtml'"/>
+                <h:commandButton id="submit" action="#{statusController.prepareCreate}" value="#{bundle.ListStatusCreateLink}"/>
                 <br />
                 <br />
-                <h:link outcome="/index" value="#{bundle.ListStatusIndexLink}"/>
+              <!--  <input type="button" value="Создать новый статус" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/status/Create.xhtml'"/> -->
                 <br />
                 <br />
-                <input type="button" value="Домой" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
+              <!--  <h:link outcome="/index" value="#{bundle.ListStatusIndexLink}"/> -->
+                <br />
+                <br />
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
             </h:form>
         </ui:define>
     </ui:composition>

@@ -46,10 +46,19 @@
                 <h:commandLink action="#{helpdeskController.create}" value="#{bundle.CreateHelpdeskSaveLink}" />
                 <br />
                 <br />
+                <h:commandButton id="submit" action="#{helpdeskController.create}" value="#{bundle.CreateHelpdeskSaveLink}" />
+                <br />
+                <br />
                 <h:commandLink action="#{helpdeskController.prepareList}" value="#{bundle.CreateHelpdeskShowAllLink}" immediate="true"/>
                 <br />
                 <br />
-                <h:link outcome="/index" value="#{bundle.CreateHelpdeskIndexLink}"/>
+                <h:commandButton action="#{helpdeskController.prepareList}" value="#{bundle.CreateHelpdeskShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+              <!--   <h:link outcome="/index" value="#{bundle.CreateHelpdeskIndexLink}"/> -->
+                <br />
+                <br />
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
             </h:form>
         </ui:define>
     </ui:composition>

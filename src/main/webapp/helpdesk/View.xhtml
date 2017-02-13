@@ -38,15 +38,23 @@
                 <h:commandLink action="#{helpdeskController.destroyAndView}" value="#{bundle.ViewHelpdeskDestroyLink}"/>
                 <br />
                 <br />
-                <h:link outcome="Edit" value="#{bundle.ViewHelpdeskEditLink}"/>
+                <h:button outcome="Edit" value="#{bundle.ViewHelpdeskEditLink}"/>
                 <br />
                 <h:commandLink action="#{helpdeskController.prepareCreate}" value="#{bundle.ViewHelpdeskCreateLink}" />
+                <br />
+                <br />
+                <h:commandButton id="submit" action="#{helpdeskController.prepareCreate}" value="#{bundle.ViewHelpdeskCreateLink}" />
                 <br />
                 <h:commandLink action="#{helpdeskController.prepareList}" value="#{bundle.ViewHelpdeskShowAllLink}"/>
                 <br />
                 <br />
-                <h:link outcome="/index" value="#{bundle.ViewHelpdeskIndexLink}"/>
-
+                <h:commandButton action="#{helpdeskController.prepareList}" value="#{bundle.ViewHelpdeskShowAllLink}"/>
+                <br />
+                <br />
+              <!--  <h:link outcome="/index" value="#{bundle.ViewHelpdeskIndexLink}"/>  -->
+                <br />
+                <br />
+                <input type="button" value="Домой" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
             </h:form>
         </ui:define>
     </ui:composition>
