@@ -16,6 +16,7 @@ a {
 table {
     empty-cells: show;
     border: 5px double #399;
+    background-color: #d4d6b2;
      
    
 }
@@ -48,6 +49,8 @@ td {
     vertical-align: top;
     padding-bottom: 8px;
     font-size: medium;
+    
+    
 }
 
 form.jsfcrud_list_form td, td td {
@@ -68,13 +71,13 @@ form.jsfcrud_list_form td, td td {
 }
 
 tr.jsfcrud_odd_row {
-    background-color: #fefeff;
+    background-color: #fefffe !important;
     color: #4e6a71;
 }
 
 
 tr.jsfcrud_even_row {
-    background-color: #eff5fa;
+    background-color: #eff5fa !important;
     color: #4e6a71;
 }
 
@@ -95,6 +98,12 @@ color:black !important;
 
 background:yellowgreen !important;
 font-size: 30px;
+ cursor:pointer;
+    display:block;
+    height:60px;
+    width:350px;
+    line-height:70px;
+    text-align:center;
 
 
 }
