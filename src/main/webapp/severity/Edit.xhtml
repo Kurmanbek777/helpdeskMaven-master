@@ -20,21 +20,21 @@
                     <h:outputLabel value="#{bundle.EditSeverityLabel_severity}" for="severity" />
                     <h:inputText id="severity" value="#{severityController.selected.severity}" title="#{bundle.EditSeverityTitle_severity}" />
                 </h:panelGrid>
-                <h:commandLink action="#{severityController.update}" value="#{bundle.EditSeveritySaveLink}"/>
+                <h:commandLink action="#{severityController.update}" value="#{bundle.EditSeveritySaveLink}" style="display: none;"/>
                 <br />
                 <br />
-                <h:button outcome="View" value="#{bundle.EditSeverityViewLink}"/>
+                <h:button outcome="View" value="#{bundle.EditSeverityViewLink}" styleClass="myClass"/>
                 <br />
-                <h:commandLink action="#{severityController.prepareList}" value="#{bundle.EditSeverityShowAllLink}" immediate="true"/>
+                <h:commandLink action="#{severityController.prepareList}" value="#{bundle.EditSeverityShowAllLink}" immediate="true" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandButton action="#{severityController.prepareList}" value="#{bundle.EditSeverityShowAllLink}" immediate="true"/>
+                <h:commandButton action="#{severityController.prepareList}" value="#{bundle.EditSeverityShowAllLink}" immediate="true" styleClass="myClass"/>
                 <br />
                 <br />
             <!--    <h:link outcome="/index" value="#{bundle.EditSeverityIndexLink}" /> -->
                 <br />
                 <br />
-                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'" class="homeButton"/>
             </h:form>
         </ui:define>
     </ui:composition>

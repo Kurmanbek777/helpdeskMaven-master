@@ -22,25 +22,25 @@
                 </h:panelGrid>
                 <br />
                 <br />
-                <h:commandLink action="#{severityController.destroyAndView}" value="#{bundle.ViewSeverityDestroyLink}"/>
+                <h:commandLink action="#{severityController.destroyAndView}" value="#{bundle.ViewSeverityDestroyLink}" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandButton action="#{severityController.destroyAndView}" value="#{bundle.ViewSeverityDestroyLink}"/>
+                <h:commandButton action="#{severityController.destroyAndView}" value="#{bundle.ViewSeverityDestroyLink}" styleClass="myClass"/>
                 <br />
                 <br />
-                <h:button outcome="Edit" value="#{bundle.ViewSeverityEditLink}"/>
+                <h:button outcome="Edit" value="#{bundle.ViewSeverityEditLink}" styleClass="myClass"/>
                 <br />
                 <br />
-                <h:commandLink action="#{severityController.prepareCreate}" value="#{bundle.ViewSeverityCreateLink}" />
+                <h:commandLink action="#{severityController.prepareCreate}" value="#{bundle.ViewSeverityCreateLink}" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandLink action="#{severityController.prepareList}" value="#{bundle.ViewSeverityShowAllLink}"/>
+                <h:commandLink action="#{severityController.prepareList}" value="#{bundle.ViewSeverityShowAllLink}" style="display: none;"/>
                 <br />
                 <br />
                 <!-- <h:link outcome="/index" value="#{bundle.ViewSeverityIndexLink}"/> -->
                 <br />
                 <br />
-                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'" class="homeButton"/>
             </h:form>
         </ui:define>
     </ui:composition>

@@ -23,22 +23,22 @@
                     <h:inputText id="LName" value="#{employeeController.selected.LName}" title="#{bundle.CreateEmployeeTitle_LName}" />
                 </h:panelGrid>
                 <br />
-                <h:commandLink action="#{employeeController.create}" value="#{bundle.CreateEmployeeSaveLink}" />
+                <h:commandLink action="#{employeeController.create}" value="#{bundle.CreateEmployeeSaveLink}" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandButton id="submit" action="#{employeeController.create}" value="#{bundle.CreateEmployeeSaveLink}" />
+                <h:commandButton id="submit" action="#{employeeController.create}" value="#{bundle.CreateEmployeeSaveLink}" styleClass="myClass"/>
                 <br />
                 <br />
-                <h:commandLink action="#{employeeController.prepareList}" value="#{bundle.CreateEmployeeShowAllLink}" immediate="true"/>
+                <h:commandLink action="#{employeeController.prepareList}" value="#{bundle.CreateEmployeeShowAllLink}" immediate="true" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandButton action="#{employeeController.prepareList}" value="#{bundle.CreateEmployeeShowAllLink}" immediate="true"/>
+                <h:commandButton action="#{employeeController.prepareList}" value="#{bundle.CreateEmployeeShowAllLink}" immediate="true" styleClass="myClass"/>
                 <br />
                 <br />
               <!--  <h:link outcome="/index" value="#{bundle.CreateEmployeeIndexLink}"/> -->
                 <br />
                 <br />
-                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'" class="homeButton"/>
             </h:form>
         </ui:define>
     </ui:composition>

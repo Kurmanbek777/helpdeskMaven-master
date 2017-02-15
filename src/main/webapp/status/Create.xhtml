@@ -21,22 +21,22 @@
                     <h:inputText id="status" value="#{statusController.selected.status}" title="#{bundle.CreateStatusTitle_status}" />
                 </h:panelGrid>
                 <br />
-                <h:commandLink action="#{statusController.create}" value="#{bundle.CreateStatusSaveLink}" />
+                <h:commandLink action="#{statusController.create}" value="#{bundle.CreateStatusSaveLink}" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandButton id="submit" action="#{statusController.create}" value="#{bundle.CreateStatusSaveLink}" />
+                <h:commandButton id="submit" action="#{statusController.create}" value="#{bundle.CreateStatusSaveLink}" styleClass="myClass"/>
                 <br />
                 <br />
-                <h:commandLink action="#{statusController.prepareList}" value="#{bundle.CreateStatusShowAllLink}" immediate="true"/>
+                <h:commandLink action="#{statusController.prepareList}" value="#{bundle.CreateStatusShowAllLink}" immediate="true" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandButton action="#{statusController.prepareList}" value="#{bundle.CreateStatusShowAllLink}" immediate="true"/>
+                <h:commandButton action="#{statusController.prepareList}" value="#{bundle.CreateStatusShowAllLink}" immediate="true" styleClass="myClass"/>
                 <br />
                 <br />
                <!--  <h:link outcome="/index" value="#{bundle.CreateStatusIndexLink}"/> -->
                 <br />
                 <br />
-                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'" class="homeButton"/>
             </h:form>
         </ui:define>
     </ui:composition>

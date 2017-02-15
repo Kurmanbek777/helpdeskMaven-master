@@ -22,31 +22,31 @@
                 </h:panelGrid>
                 <br />
                 <br />
-                <h:commandLink action="#{statusController.destroyAndView}" value="#{bundle.ViewStatusDestroyLink}"/>
+                <h:commandLink action="#{statusController.destroyAndView}" value="#{bundle.ViewStatusDestroyLink}" style="display: none;"/>
                 <br />
                 <br />
                 <h:commandButton action="#{statusController.destroyAndView}" value="#{bundle.ViewStatusDestroyLink}"/>
                 <br />
                 <br />
-                <h:button outcome="Edit" value="#{bundle.ViewStatusEditLink}"/>
+                <h:button outcome="Edit" value="#{bundle.ViewStatusEditLink}" styleClass="myClass"/>
                 <br />
                 <br />
-                <h:commandLink action="#{statusController.prepareCreate}" value="#{bundle.ViewStatusCreateLink}" />
+                <h:commandLink action="#{statusController.prepareCreate}" value="#{bundle.ViewStatusCreateLink}" style="display: none;" />
                 <br />
                 <br />
-                <h:commandButton id="submit" action="#{statusController.prepareCreate}" value="#{bundle.ViewStatusCreateLink}" />
+                <h:commandButton id="submit" action="#{statusController.prepareCreate}" value="#{bundle.ViewStatusCreateLink}" styleClass="myClass"/>
                 <br />
                 <br />
-                <h:commandLink action="#{statusController.prepareList}" value="#{bundle.ViewStatusShowAllLink}"/>
+                <h:commandLink action="#{statusController.prepareList}" value="#{bundle.ViewStatusShowAllLink}" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandButton action="#{statusController.prepareList}" value="#{bundle.ViewStatusShowAllLink}"/>
+                <h:commandButton action="#{statusController.prepareList}" value="#{bundle.ViewStatusShowAllLink}" styleClass="myClass"/>
                 <br />
                 <br />
                 <!-- <h:link outcome="/index" value="#{bundle.ViewStatusIndexLink}"/> -->
                 <br />
                 <br />
-                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'" class="homeButton"/>
             </h:form>
         </ui:define>
     </ui:composition>

@@ -78,22 +78,22 @@
                             <f:facet name="header">
                                 <h:outputText value="&nbsp;"/>
                             </f:facet>
-                            <h:commandLink action="#{helpdeskController.prepareView}" value="#{bundle.ListHelpdeskViewLink}"/>
+                            <h:commandLink action="#{helpdeskController.prepareView}" value="#{bundle.ListHelpdeskViewLink}" style="display: none;"/>
                             <h:commandButton action="#{helpdeskController.prepareView}" value="#{bundle.ListHelpdeskViewLink}"/>
                             <h:outputText value=" "/>
-                            <h:commandLink action="#{helpdeskController.prepareEdit}" value="#{bundle.ListHelpdeskEditLink}"/>
+                            <h:commandLink action="#{helpdeskController.prepareEdit}" value="#{bundle.ListHelpdeskEditLink}" style="display: none;"/>
                             <h:commandButton action="#{helpdeskController.prepareEdit}" value="#{bundle.ListHelpdeskEditLink}"/>
                             <h:outputText value=" "/>
-                            <h:commandLink action="#{helpdeskController.destroy}" value="#{bundle.ListHelpdeskDestroyLink}"/>
+                            <h:commandLink action="#{helpdeskController.destroy}" value="#{bundle.ListHelpdeskDestroyLink}" style="display: none;"/>
                             <h:commandButton action="#{helpdeskController.destroy}" value="#{bundle.ListHelpdeskDestroyLink}"/>
                         </h:column>
                     </h:dataTable>
                 </h:panelGroup>
                 <br />
-                <h:commandLink action="#{helpdeskController.prepareCreate}" value="#{bundle.ListHelpdeskCreateLink}"/>
+                <h:commandLink action="#{helpdeskController.prepareCreate}" value="#{bundle.ListHelpdeskCreateLink}" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandButton action="#{helpdeskController.prepareCreate}" value="#{bundle.ListHelpdeskCreateLink}"/>
+                <h:commandButton action="#{helpdeskController.prepareCreate}" value="#{bundle.ListHelpdeskCreateLink}" styleClass="myClass"/>
                 <br />
                 <br />
               <!--  <input type="button" value="Создать новую заявку" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/helpdesk/Create.xhtml'"/> -->
@@ -102,7 +102,7 @@
                <!--  <h:link outcome="/index" value="#{bundle.ListHelpdeskIndexLink}"/> -->
                 <br />
                 <br />
-                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'" class="homeButton"/>
             </h:form>
         </ui:define>
     </ui:composition>

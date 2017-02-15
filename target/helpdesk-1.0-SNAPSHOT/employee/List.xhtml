@@ -42,23 +42,23 @@
                             <f:facet name="header">
                                 <h:outputText value="&nbsp;"/>
                             </f:facet>
-                            <h:commandLink action="#{employeeController.prepareView}" value="#{bundle.ListEmployeeViewLink}"/>
+                            <h:commandLink action="#{employeeController.prepareView}" value="#{bundle.ListEmployeeViewLink}" style="display: none;"/>
                             <h:commandButton action="#{employeeController.prepareView}" value="#{bundle.ListEmployeeViewLink}"/>
                             <h:outputText value=" "/>
-                            <h:commandLink action="#{employeeController.prepareEdit}" value="#{bundle.ListEmployeeEditLink}"/>
+                            <h:commandLink action="#{employeeController.prepareEdit}" value="#{bundle.ListEmployeeEditLink}" style="display: none;"/>
                             <h:commandButton action="#{employeeController.prepareEdit}" value="#{bundle.ListEmployeeEditLink}"/>
                             <h:outputText value=" "/>
-                            <h:commandLink action="#{employeeController.destroy}" value="#{bundle.ListEmployeeDestroyLink}"/>
+                            <h:commandLink action="#{employeeController.destroy}" value="#{bundle.ListEmployeeDestroyLink}" style="display: none;"/>
                             <h:commandButton action="#{employeeController.destroy}" value="#{bundle.ListEmployeeDestroyLink}"/>
                             
                         </h:column>
                     </h:dataTable>
                 </h:panelGroup>
                 <br />
-                <h:commandLink action="#{employeeController.prepareCreate}" value="#{bundle.ListEmployeeCreateLink}"/>
+                <h:commandLink action="#{employeeController.prepareCreate}" value="#{bundle.ListEmployeeCreateLink}" style="display: none;"/>
                 <br />
                 <br />
-                 <h:commandButton id="submit" action="#{employeeController.prepareCreate}" value="#{bundle.ListEmployeeCreateLink}"/>
+                 <h:commandButton id="submit" action="#{employeeController.prepareCreate}" value="#{bundle.ListEmployeeCreateLink}" styleClass="myClass"/>
                 <br />
                 <br />
             <!--    <input type="button" value="Создать нового исполнителя" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/employee/Create.xhtml'"/>  -->
@@ -67,7 +67,7 @@
               <!--  <h:link outcome="/index" value="#{bundle.ListEmployeeIndexLink}"/> -->
                 <br />
                 <br />
-                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'" class="homeButton"/>
             </h:form>
         </ui:define>
     </ui:composition>

@@ -20,21 +20,21 @@
                     <h:outputLabel value="#{bundle.EditStatusLabel_status}" for="status" />
                     <h:inputText id="status" value="#{statusController.selected.status}" title="#{bundle.EditStatusTitle_status}" />
                 </h:panelGrid>
-                <h:commandLink action="#{statusController.update}" value="#{bundle.EditStatusSaveLink}"/>
+                <h:commandLink action="#{statusController.update}" value="#{bundle.EditStatusSaveLink}" style="display: none;"/>
                 <br />
                 <br />
-                <h:button outcome="View" value="#{bundle.EditStatusViewLink}"/>
+                <h:button outcome="View" value="#{bundle.EditStatusViewLink}" styleClass="myClass"/>
                 <br />
-                <h:commandLink action="#{statusController.prepareList}" value="#{bundle.EditStatusShowAllLink}" immediate="true"/>
+                <h:commandLink action="#{statusController.prepareList}" value="#{bundle.EditStatusShowAllLink}" immediate="true" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandButton action="#{statusController.prepareList}" value="#{bundle.EditStatusShowAllLink}" immediate="true"/>
+                <h:commandButton action="#{statusController.prepareList}" value="#{bundle.EditStatusShowAllLink}" immediate="true" styleClass="myClass"/>
                 <br />
                 <br />
               <!--  <h:link outcome="/index" value="#{bundle.EditStatusIndexLink}" /> -->
                 <br />
                 <br />
-                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'" class="homeButton"/>
             </h:form>
         </ui:define>
     </ui:composition>

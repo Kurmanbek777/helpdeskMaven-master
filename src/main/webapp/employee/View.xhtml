@@ -24,7 +24,7 @@
                 </h:panelGrid>
                 <br />
                 <br />
-                <h:commandLink action="#{employeeController.destroyAndView}" value="#{bundle.ViewEmployeeDestroyLink}"/>
+                <h:commandLink action="#{employeeController.destroyAndView}" value="#{bundle.ViewEmployeeDestroyLink}" style="display: none;"/>
                 <br />
                 <br />
                 <h:commandButton action="#{employeeController.destroyAndView}" value="#{bundle.ViewEmployeeDestroyLink}"/>
@@ -33,25 +33,25 @@
               <!--  <h:link outcome="Edit" value="#{bundle.ViewEmployeeEditLink}"/> -->
                 <br />
                 <br />
-                <h:button outcome="Edit" value="#{bundle.ViewEmployeeEditLink}"/>
+                <h:button outcome="Edit" value="#{bundle.ViewEmployeeEditLink}" styleClass="myClass"/>
                 <br />
                 <br />
-                <h:commandLink action="#{employeeController.prepareCreate}" value="#{bundle.ViewEmployeeCreateLink}" />
+                <h:commandLink action="#{employeeController.prepareCreate}" value="#{bundle.ViewEmployeeCreateLink}" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandButton id="submit"  action="#{employeeController.prepareCreate}" value="#{bundle.ViewEmployeeCreateLink}" />
+                <h:commandButton id="submit"  action="#{employeeController.prepareCreate}" value="#{bundle.ViewEmployeeCreateLink}" styleClass="myClass"/>
                 <br />
                 <br />
-                <h:commandLink action="#{employeeController.prepareList}" value="#{bundle.ViewEmployeeShowAllLink}"/>
+                <h:commandLink action="#{employeeController.prepareList}" value="#{bundle.ViewEmployeeShowAllLink}" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandButton action="#{employeeController.prepareList}" value="#{bundle.ViewEmployeeShowAllLink}"/>
+                <h:commandButton action="#{employeeController.prepareList}" value="#{bundle.ViewEmployeeShowAllLink}" styleClass="myClass"/>
                 <br />
                 <br />
                <!--  <h:link outcome="/index" value="#{bundle.ViewEmployeeIndexLink}"/> -->
                 <br />
                 <br />
-                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'" class="homeButton"/>
             </h:form>
         </ui:define>
     </ui:composition>

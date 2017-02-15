@@ -4,9 +4,9 @@ root {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #3a4f54;
-    background-color: #dfecf1;
-    font-size: small;
+    color: #431eff;
+    background-color: #48D1CC;
+    font-size: large;
 }
 
 a {
@@ -15,12 +15,14 @@ a {
 
 table {
     empty-cells: show;
-    border: 4px double #399;
+    border: 5px double #399;
+     
+   
 }
 
 form.jsfcrud_list_form th, td th {
-    font-size: small;
-    color: #4e6a71;
+    font-size: medium;
+    color: #714f4e;
     border-top-style: solid;
     border-bottom-style: solid;
     border-left-style: solid;
@@ -45,7 +47,7 @@ form.jsfcrud_list_form th, td th {
 td {
     vertical-align: top;
     padding-bottom: 8px;
-    font-size: small;
+    font-size: medium;
 }
 
 form.jsfcrud_list_form td, td td {
@@ -82,3 +84,21 @@ tr.jsfcrud_even_row {
     top: 50%;
 }
 
+.LinkStyle {
+    
+    display: none;
+}
+
+.myClass{
+
+color:black !important;
+
+background:yellowgreen !important;
+
+}
+
+input.homeButton{
+   color:black !important;
+    background:red !important;
+    font-size: 20px;
+}

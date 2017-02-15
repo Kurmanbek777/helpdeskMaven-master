@@ -36,28 +36,28 @@
                 </h:panelGrid>
                 <br />
                 <br />
-                <h:commandLink action="#{helpdeskController.destroyAndView}" value="#{bundle.ViewHelpdeskDestroyLink}"/>
+                <h:commandLink action="#{helpdeskController.destroyAndView}" value="#{bundle.ViewHelpdeskDestroyLink}" style="display: none;"/>
                 <br />
                 <br />
-                <h:button outcome="Edit" value="#{bundle.ViewHelpdeskEditLink}"/>
+                <h:button outcome="Edit" value="#{bundle.ViewHelpdeskEditLink}" styleClass="myClass"/>
                 <br />
                 <br />
-                <h:commandLink action="#{helpdeskController.prepareCreate}" value="#{bundle.ViewHelpdeskCreateLink}" />
+                <h:commandLink action="#{helpdeskController.prepareCreate}" value="#{bundle.ViewHelpdeskCreateLink}" style="display: none;" />
                 <br />
                 <br />
-                <h:commandButton id="submit" action="#{helpdeskController.prepareCreate}" value="#{bundle.ViewHelpdeskCreateLink}" />
+                <h:commandButton id="submit" action="#{helpdeskController.prepareCreate}" value="#{bundle.ViewHelpdeskCreateLink}" styleClass="myClass" />
                 <br />
                 <br />
-                <h:commandLink action="#{helpdeskController.prepareList}" value="#{bundle.ViewHelpdeskShowAllLink}"/>
+                <h:commandLink action="#{helpdeskController.prepareList}" value="#{bundle.ViewHelpdeskShowAllLink}" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandButton action="#{helpdeskController.prepareList}" value="#{bundle.ViewHelpdeskShowAllLink}"/>
+                <h:commandButton action="#{helpdeskController.prepareList}" value="#{bundle.ViewHelpdeskShowAllLink}" styleClass="myClass"/>
                 <br />
                 <br />
               <!--  <h:link outcome="/index" value="#{bundle.ViewHelpdeskIndexLink}"/>  -->
                 <br />
                 <br />
-                <input type="button" value="Домой" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
+                <input type="button" value="Домой" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'" class="homeButton"/>
             </h:form>
         </ui:define>
     </ui:composition>

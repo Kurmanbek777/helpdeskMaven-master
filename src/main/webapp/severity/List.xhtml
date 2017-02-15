@@ -36,22 +36,22 @@
                             <f:facet name="header">
                                 <h:outputText value="&nbsp;"/>
                             </f:facet>
-                            <h:commandLink action="#{severityController.prepareView}" value="#{bundle.ListSeverityViewLink}"/>
+                            <h:commandLink action="#{severityController.prepareView}" value="#{bundle.ListSeverityViewLink}" style="display: none;"/>
                             <h:commandButton action="#{severityController.prepareView}" value="#{bundle.ListSeverityViewLink}"/>
                             <h:outputText value=" "/>
-                            <h:commandLink action="#{severityController.prepareEdit}" value="#{bundle.ListSeverityEditLink}"/>
+                            <h:commandLink action="#{severityController.prepareEdit}" value="#{bundle.ListSeverityEditLink}" style="display: none;"/>
                             <h:commandButton action="#{severityController.prepareEdit}" value="#{bundle.ListSeverityEditLink}"/>
                             <h:outputText value=" "/>
-                            <h:commandLink action="#{severityController.destroy}" value="#{bundle.ListSeverityDestroyLink}"/>
+                            <h:commandLink action="#{severityController.destroy}" value="#{bundle.ListSeverityDestroyLink}" style="display: none;"/>
                             <h:commandButton action="#{severityController.destroy}" value="#{bundle.ListSeverityDestroyLink}"/>
                         </h:column>
                     </h:dataTable>
                 </h:panelGroup>
                 <br />
-                <h:commandLink action="#{severityController.prepareCreate}" value="#{bundle.ListSeverityCreateLink}"/>
+                <h:commandLink action="#{severityController.prepareCreate}" value="#{bundle.ListSeverityCreateLink}" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandButton id="submit" action="#{severityController.prepareCreate}" value="#{bundle.ListSeverityCreateLink}"/>
+                <h:commandButton id="submit" action="#{severityController.prepareCreate}" value="#{bundle.ListSeverityCreateLink}" styleClass="myClass"/>
                 <br />
                 <br />
               <!--  <input type="button" value="Создать" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/severity/Create.xhtml'"/> -->
@@ -60,7 +60,7 @@
               <!--  <h:link outcome="/index" value="#{bundle.ListSeverityIndexLink}"/> -->
                 <br />
                 <br />
-                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'" class="homeButton"/>
             </h:form>
         </ui:define>
     </ui:composition>

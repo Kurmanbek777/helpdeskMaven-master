@@ -36,22 +36,22 @@
                             <f:facet name="header">
                                 <h:outputText value="&nbsp;"/>
                             </f:facet>
-                            <h:commandLink action="#{statusController.prepareView}" value="#{bundle.ListStatusViewLink}"/>
+                            <h:commandLink action="#{statusController.prepareView}" value="#{bundle.ListStatusViewLink}" style="display: none;"/>
                             <h:commandButton action="#{statusController.prepareView}" value="#{bundle.ListStatusViewLink}"/>
                             <h:outputText value=" "/>
-                            <h:commandLink action="#{statusController.prepareEdit}" value="#{bundle.ListStatusEditLink}"/>
+                            <h:commandLink action="#{statusController.prepareEdit}" value="#{bundle.ListStatusEditLink}" style="display: none;"/>
                             <h:commandButton action="#{statusController.prepareEdit}" value="#{bundle.ListStatusEditLink}"/>
                             <h:outputText value=" "/>
-                            <h:commandLink action="#{statusController.destroy}" value="#{bundle.ListStatusDestroyLink}"/>
+                            <h:commandLink action="#{statusController.destroy}" value="#{bundle.ListStatusDestroyLink}" style="display: none;"/>
                             <h:commandButton action="#{statusController.destroy}" value="#{bundle.ListStatusDestroyLink}"/>
                         </h:column>
                     </h:dataTable>
                 </h:panelGroup>
                 <br />
-                <h:commandLink action="#{statusController.prepareCreate}" value="#{bundle.ListStatusCreateLink}"/>
+                <h:commandLink action="#{statusController.prepareCreate}" value="#{bundle.ListStatusCreateLink}" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandButton id="submit" action="#{statusController.prepareCreate}" value="#{bundle.ListStatusCreateLink}"/>
+                <h:commandButton id="submit" action="#{statusController.prepareCreate}" value="#{bundle.ListStatusCreateLink}" styleClass="myClass"/>
                 <br />
                 <br />
               <!--  <input type="button" value="Создать новый статус" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/status/Create.xhtml'"/> -->
@@ -60,7 +60,7 @@
               <!--  <h:link outcome="/index" value="#{bundle.ListStatusIndexLink}"/> -->
                 <br />
                 <br />
-                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'" class="homeButton"/>
             </h:form>
         </ui:define>
     </ui:composition>

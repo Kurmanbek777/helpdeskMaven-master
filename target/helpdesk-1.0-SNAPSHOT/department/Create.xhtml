@@ -8,6 +8,7 @@
     <ui:composition template="/template.xhtml">
         <ui:define name="title">
             <h:outputText value="#{bundle.CreateDepartmentTitle}"></h:outputText>
+            
         </ui:define>
         <ui:define name="body">
             <h:panelGroup id="messagePanel" layout="block">
@@ -21,16 +22,16 @@
                     <h:inputText id="department" value="#{departmentController.selected.department}" title="#{bundle.CreateDepartmentTitle_department}" />
                 </h:panelGrid>
                 <br />
-               <h:commandLink action="#{departmentController.create}" value="#{bundle.CreateDepartmentSaveLink}" />
+               <h:commandLink action="#{departmentController.create}" value="#{bundle.CreateDepartmentSaveLink}" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandButton id="submit" action="#{departmentController.create}" value="#{bundle.CreateDepartmentSaveLink}"/>
+                <h:commandButton id="submit" action="#{departmentController.create}" value="#{bundle.CreateDepartmentSaveLink}" styleClass="myClass"/>
                 <br />
                 <br />
-                <h:commandLink action="#{departmentController.prepareList}" value="#{bundle.CreateDepartmentShowAllLink}" immediate="true"/> 
+                <h:commandLink action="#{departmentController.prepareList}" value="#{bundle.CreateDepartmentShowAllLink}" immediate="true" style="display: none;"/> 
                 <br />
                 <br />
-                <h:commandButton action="#{departmentController.prepareList}" value="#{bundle.CreateDepartmentShowAllLink}" immediate="true"/>
+                <h:commandButton action="#{departmentController.prepareList}" value="#{bundle.CreateDepartmentShowAllLink}" immediate="true" styleClass="myClass"/>
                  <br />
                 <br />
               <!--  <input type="button" value="Показать все департаменты" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/department/List.xhtml'"/> -->
@@ -39,7 +40,7 @@
               <!--   <h:link outcome="/index" value="#{bundle.CreateDepartmentIndexLink}"/>  -->
                 <br />
                 <br />
-                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'" class="homeButton"/>
             </h:form>
         </ui:define>
     </ui:composition>

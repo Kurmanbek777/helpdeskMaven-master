@@ -24,7 +24,7 @@
                     <h:outputLabel value="#{bundle.EditHelpdeskLabel_email}" for="email" />
                     <h:inputText id="email" value="#{helpdeskController.selected.email}" title="#{bundle.EditHelpdeskTitle_email}" />
                     <h:outputLabel value="#{bundle.EditHelpdeskLabel_comments}" for="comments" />
-                    <h:inputText id="comments" value="#{helpdeskController.selected.comments}" title="#{bundle.EditHelpdeskTitle_comments}" />
+                    <h:inputText id="comments" value="#{helpdeskController.selected.comments}" title="#{bundle.EditHelpdeskTitle_comments}" size="30" />
                     <h:outputLabel value="#{bundle.EditHelpdeskLabel_statusID}" for="statusID" />
                     <h:selectOneMenu id="statusID" value="#{helpdeskController.selected.statusID}" title="#{bundle.EditHelpdeskTitle_statusID}" required="true" requiredMessage="#{bundle.EditHelpdeskRequiredMessage_statusID}">
                         <f:selectItems value="#{statusController.itemsAvailableSelectOne}"/>
@@ -42,21 +42,21 @@
                         <f:selectItems value="#{severityController.itemsAvailableSelectOne}"/>
                     </h:selectOneMenu>
                 </h:panelGrid>
-                <h:commandLink action="#{helpdeskController.update}" value="#{bundle.EditHelpdeskSaveLink}"/>
+                <h:commandLink action="#{helpdeskController.update}" value="#{bundle.EditHelpdeskSaveLink}" style="display: none;"/>
                 <br />
                 <br />
-                <h:button outcome="View" value="#{bundle.EditHelpdeskViewLink}"/>
+                <h:button outcome="View" value="#{bundle.EditHelpdeskViewLink}" styleClass="myClass"/>
                 <br />
-                <h:commandLink action="#{helpdeskController.prepareList}" value="#{bundle.EditHelpdeskShowAllLink}" immediate="true"/>
+                <h:commandLink action="#{helpdeskController.prepareList}" value="#{bundle.EditHelpdeskShowAllLink}" immediate="true" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandButton action="#{helpdeskController.prepareList}" value="#{bundle.EditHelpdeskShowAllLink}" immediate="true"/>
+                <h:commandButton action="#{helpdeskController.prepareList}" value="#{bundle.EditHelpdeskShowAllLink}" immediate="true" styleClass="myClass"/>
                 <br />
                 <br />
                <!--  <h:link outcome="/index" value="#{bundle.EditHelpdeskIndexLink}" /> -->
                 <br />
                 <br />
-                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'" class="homeButton"/>
             </h:form>
         </ui:define>
     </ui:composition>

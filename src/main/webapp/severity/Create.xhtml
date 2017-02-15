@@ -21,22 +21,22 @@
                     <h:inputText id="severity" value="#{severityController.selected.severity}" title="#{bundle.CreateSeverityTitle_severity}" />
                 </h:panelGrid>
                 <br />
-                <h:commandLink action="#{severityController.create}" value="#{bundle.CreateSeveritySaveLink}" />
+                <h:commandLink action="#{severityController.create}" value="#{bundle.CreateSeveritySaveLink}" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandButton id="submit" action="#{severityController.create}" value="#{bundle.CreateSeveritySaveLink}" />
+                <h:commandButton id="submit" action="#{severityController.create}" value="#{bundle.CreateSeveritySaveLink}" styleClass="myClass" />
                 <br />
                 <br />
-                <h:commandLink action="#{severityController.prepareList}" value="#{bundle.CreateSeverityShowAllLink}" immediate="true"/>
+                <h:commandLink action="#{severityController.prepareList}" value="#{bundle.CreateSeverityShowAllLink}" immediate="true" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandButton action="#{severityController.prepareList}" value="#{bundle.CreateSeverityShowAllLink}" immediate="true"/>
+                <h:commandButton action="#{severityController.prepareList}" value="#{bundle.CreateSeverityShowAllLink}" immediate="true" styleClass="myClass"/>
                 <br />
                 <br />
               <!--  <h:link outcome="/index" value="#{bundle.CreateSeverityIndexLink}"/> -->
                 <br />
                 <br />
-                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'"/>
+                <input type="button" value="Home" onclick="javascript:window.location='http://localhost:2822/Helpdesk/faces/index.xhtml'" class="homeButton"/>
             </h:form>
         </ui:define>
     </ui:composition>
