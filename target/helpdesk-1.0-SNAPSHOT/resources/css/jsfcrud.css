@@ -97,11 +97,11 @@ tr.jsfcrud_even_row {
 color:black !important;
 
 background:yellowgreen !important;
-font-size: 30px;
+font-size: 25px;
  cursor:pointer;
     display:block;
     height:60px;
-    width:350px;
+    width:360px;
     line-height:70px;
     text-align:center;
 
@@ -111,6 +111,12 @@ font-size: 30px;
 input.homeButton{
    color:black !important;
     background:red !important;
-    font-size: 20px;
+   font-size: 30px;
+ cursor:pointer;
+    display:block;
+    height:60px;
+    width:350px;
+    line-height:70px;
+    text-align:center;
 }
 
