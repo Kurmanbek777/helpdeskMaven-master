@@ -30,18 +30,18 @@
                 <h:commandButton action="#{departmentController.destroyAndView}" value="#{bundle.ViewDepartmentDestroyLink}" styleClass="myClass"/>
                 <br />
                 <br />
-                <h:button outcome="Edit" value="#{bundle.ViewDepartmentEditLink}"/>
+                <h:button outcome="Edit" value="#{bundle.ViewDepartmentEditLink}" styleClass="myClass"/>
                 <br />
                 <br />
                 <h:commandLink action="#{departmentController.prepareCreate}" value="#{bundle.ViewDepartmentCreateLink}" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandButton id="submit" action="#{departmentController.prepareCreate}" value="#{bundle.ViewDepartmentCreateLink}" />
+                <h:commandButton id="submit" action="#{departmentController.prepareCreate}" value="#{bundle.ViewDepartmentCreateLink}" styleClass="myClass" />
                 <br />
                 <h:commandLink action="#{departmentController.prepareList}" value="#{bundle.ViewDepartmentShowAllLink}" style="display: none;"/>
                 <br />
                 <br />
-                <h:commandButton action="#{departmentController.prepareList}" value="#{bundle.ViewDepartmentShowAllLink}" />
+                <h:commandButton action="#{departmentController.prepareList}" value="#{bundle.ViewDepartmentShowAllLink}" styleClass="myClass" />
                 <br />
                 <br />
              <!--   <h:link outcome="/index" value="#{bundle.ViewDepartmentIndexLink}"/> -->
