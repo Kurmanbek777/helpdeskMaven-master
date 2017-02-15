@@ -24,7 +24,7 @@
                     <h:outputLabel value="#{bundle.CreateHelpdeskLabel_email}" for="email" />
                     <h:inputText id="email" value="#{helpdeskController.selected.email}" title="#{bundle.CreateHelpdeskTitle_email}"/>
                     <h:outputLabel value="#{bundle.CreateHelpdeskLabel_comments}" for="comments" />
-                    <textarea id="comments" value="#{helpdeskController.selected.comments}" title="#{bundle.CreateHelpdeskTitle_comments}" size="30" rows="5"/>
+                    <h:inputText id="comments" value="#{helpdeskController.selected.comments}" title="#{bundle.CreateHelpdeskTitle_comments}" size="30"/>
                     <h:outputLabel value="#{bundle.CreateHelpdeskLabel_statusID}" for="statusID" />
                     <h:selectOneMenu id="statusID" value="#{helpdeskController.selected.statusID}" title="#{bundle.CreateHelpdeskTitle_statusID}" required="true" requiredMessage="#{bundle.CreateHelpdeskRequiredMessage_statusID}">
                         <f:selectItems value="#{statusController.itemsAvailableSelectOne}"/>

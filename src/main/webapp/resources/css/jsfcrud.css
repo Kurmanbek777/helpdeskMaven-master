@@ -94,6 +94,7 @@ tr.jsfcrud_even_row {
 color:black !important;
 
 background:yellowgreen !important;
+font-size: 30px;
 
 }
 
@@ -102,3 +103,4 @@ input.homeButton{
     background:red !important;
     font-size: 20px;
 }
+
